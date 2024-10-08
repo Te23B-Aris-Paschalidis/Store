@@ -12,3 +12,4 @@ C:\Users\aris.paschalidis\Documents\Programmering 1\Store\Store\obj\Debug\net8.0
 C:\Users\aris.paschalidis\Documents\Programmering 1\Store\Store\obj\Debug\net8.0\Store.pdb
 C:\Users\aris.paschalidis\Documents\Programmering 1\Store\Store\obj\Debug\net8.0\Store.genruntimeconfig.cache
 C:\Users\aris.paschalidis\Documents\Programmering 1\Store\Store\obj\Debug\net8.0\ref\Store.dll
+C:\Users\aris.paschalidis\Documents\Programmering 1\Store\Store\obj\Debug\net8.0\Store.sourcelink.json
