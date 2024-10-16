@@ -1,20 +1,73 @@
-﻿int kronor = 100;
+﻿using Microsoft.VisualBasic;
 
-Console.WriteLine($"Du har {kronor} kronor att spendera\n");
-Console.WriteLine("Vad vill du köpa?");
-Console.WriteLine("1. Keps 20kr");
-Console.WriteLine("2. Tröja 30kr");
-Console.WriteLine("3. Jeans 50kr");
+int kronor = 100;
 
-string val = Console.ReadLine();
 
-Console.WriteLine("Hur många?");
-string antal = Console.ReadLine();
-
-if (val == "1")
+while (kronor > 0)
 {
 
+
+    Console.WriteLine($"Du har {kronor} kronor att spendera\n");
+    Console.WriteLine("Vad vill du köpa?");
+    Console.WriteLine("1. Keps 10kr");
+    Console.WriteLine("2. Tröja 30kr");
+    Console.WriteLine("3. Jeans 50kr");
+
+    string val = Console.ReadLine();
+
+    Console.WriteLine("Hur många?");
+    string antal = Console.ReadLine();
+
+    int ant;
+
+    int.TryParse(antal, out ant);
+
+    if (val == "1")
+    {
+        int totalKostnad = ant * 10;
+        if (totalKostnad <= kronor)
+        {
+            Console.WriteLine("Ja");
+            kronor -= totalKostnad;
+            Console.WriteLine($"Du har {kronor} kr kvar");
+        }
+        else
+        {
+            Console.WriteLine("Nej");
+        }
+        Console.WriteLine(totalKostnad);
+    }
+
+    if (val == "2")
+    {
+        int totalKostnad = ant * 30;
+        if (totalKostnad <= kronor)
+        {
+            Console.WriteLine("Ja");
+            kronor -= totalKostnad;
+            Console.WriteLine($"Du har {kronor} kr kvar");
+        }
+        else{
+            Console.WriteLine("Nej det går ej");
+        }
+    }
+
+if (val == "3")
+{
+    int totalKostnad = ant * 50;
+    if (totalKostnad <= kronor)
+    {
+        Console.WriteLine("Ja");
+        kronor -= totalKostnad;
+        Console.WriteLine($"Du har {kronor} kr kvar");
+    }
+    else{
+        Console.WriteLine("Nej det går ej");
+    }
 }
+
+}
+
 Console.ReadLine();
 
 
